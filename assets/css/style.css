@@ -215,3 +215,30 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+@media only screen and (max-width:980px) {
+}
+
+@media only screen and (max-width:768px) {
+}
+
+@media only screen and (max-width:640px) {
+  body {background-color: lightgreen;}
+  masterhead {position: static;
+    float: center;
+}
+}
+
+
+/* Make the layout match the following screenshots:
+index.html: 980px, 768px, 640px
+portfolio.html: 980px, 768px, 640px
+contact.html: 980px, 768px, 640px
+
+Make the position of the header static (the default positioning) 
+when the screen is 640px wide. The header design takes up a lot of room; 
+you don't want it to stick to the top of a small screen and leave no room 
+for the rest of your site.
+Be sure to include the viewport tag in all your HTML files, otherwise 
+your media-queries won't function as expected on mobile devices. (Hint: You won't 
+need to use exact pixels for anything other than the container) */
